@@ -1,0 +1,182 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background: #383e56;
+  color: #fb743e;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+}
+ul {
+  display: flex;
+  list-style: none;
+}
+li {
+  margin-left: 2rem;
+  font-size: 1.5rem;
+  width: 100%;
+}
+li a {
+  text-decoration: none;
+  color: #fb743e;
+}
+li a:hover {
+  color: #fff;
+}
+.logo {
+  font-size: 2rem;
+}
+.show {
+  display: block;
+}
+.btn-show {
+  position: absolute;
+  top: 2%;
+  right: 20px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  display: none;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  margin: 10px;
+}
+img {
+  width: 300px;
+  height: 400px;
+}
+
+footer {
+  background-color: #383e56;
+  font-size: 20px;
+  color: #fb743e;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  flex-wrap: wrap;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.copyright {
+  background-color: #383e56;
+  text-align: center;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 10vh;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 20px;
+    display: none;
+  }
+  li {
+    padding: 1rem 0;
+    width: 100%;
+    margin: auto;
+    cursor: pointer;
+    text-decoration: none;
+    color: azure;
+  }
+
+  li a:hover {
+    color: #fff;
+  }
+
+  .btn-show {
+    display: block;
+    cursor: pointer;
+    outline: none;
+    border: none;
+  }
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #df8f70;
+  justify-content: center;
+  align-items: center;
+  min-height: 85vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  font-size: 30px;
+  color: #fff;
+}
+input {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.btn-contact {
+  width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  cursor: pointer;
+  background-color: #383e56;
+  color: #fb743e;
+  font-size: 25px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+
+.btn-contact:hover {
+  background-color: #fff;
+  color: #fb743e;
+}
+
+.pagination {
+  cursor: pointer;
+  display: inline-block;
+  margin: 1em 0;
+  margin-left: 25em;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.pagination a.active {
+  background-color: #fb743e;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
